@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="../dist/reset.css" />
+    <link rel="stylesheet" href="../dist/reveal.css" />
+    <!-- <link rel="stylesheet" href="../dist/theme/black.css" id="theme" /> -->
+    <link rel="stylesheet" href="../dist/tailwind.css" />
+    <!-- Theme used for syntax highlighted code -->
+    <link
+      rel="stylesheet"
+      href="../plugin/highlight/monokai.css"
+      id="highlight-theme"
+    />
+  </head>
+  <body>
+    <div class="reveal bg-gray-900 text-gray-200">
+      <div class="slides">
+        <section>
+          <img
+            class="max-w-sm mx-auto"
+            src="../assets/imgs/JS.svg"
+            alt="javascript"
+          />
+        </section>
+        <section>
+          <section>
+            <img
+              class="h-24 mx-auto"
+              src="../assets/imgs/Basicos.svg"
+              alt="javascript"
+            />
+          </section>
+          <section>
+            <h2 class="text-4xl font-bold">Variables</h2>
+            <p class="text-2xl">Forma de guardar informacion</p>
+          </section>
+          <section>
+            <pre>
+                <code class="text-left" data-trim data-noescape data-line-numbers="1-2">
+                    var nombre = "diega"; // String o cadena de texto
+                    var edad = 29; // Number ... bue numeros
+                </code>
+            </pre>
+          </section>
+          <section>
+            <h2 class="text-4xl font-bold">Declaracion</h2>
+            <p class="text-2xl">Como hacemos que funciones todo</p>
+          </section>
+          <section>
+            <!-- <script type="text/template">
+                sealed class Either<out A, out B> {
+                    data class Left<out A>(val a: A) : Either<A, Nothing>()
+                    data class Right<out B>(val b: B) : Either<Nothing, B>()
+                }
+            </script> -->
+            <pre>
+                <code class="text-left" data-trim data-noescape data-line-numbers="1|2|3|4|5">
+                    var // Palabra clave para declarar una variable
+                    nombre // Nombre de la variable
+                    = // Igual para generar la equivalencia
+                    "diega" // Contendido de la variable
+                    ; // Marca de fin
+                </code>
+            </pre>
+          </section>
+          <section>
+            <h2 class="text-4xl font-bold">; Punto y Coma</h2>
+            <p class="text-2xl">No lo necesitamos pero ayuda</p>
+          </section>
+          <section>
+            <h2 class="text-4xl font-bold">Operaciones</h2>
+            <p class="text-2xl">La matematica es cool chicos!</p>
+          </section>
+          <section>
+            <pre>
+                <code class="text-left" data-trim data-noescape data-line-numbers="1|2|3-8">
+                    var dosMasDos = 2 + 2;
+                    dosMasDos // 4
+                    // Operaciones
+                    // suma +
+                    // resta -
+                    // divicion /
+                    // multiplicacion *
+                </code>
+            </pre>
+          </section>
+          <section>
+            <h2 class="text-4xl font-bold">Tipos de Datos</h2>
+            <p class="text-2xl">Que es que</p>
+          </section>
+          <section>
+            <pre>
+                <code class="text-left" data-trim data-noescape data-line-numbers="1|2|3|4">
+                    var String = 'Soy un texto';
+                    var Number = 1;
+                    var TambienNumber = 0.523645;
+                    var soyTexto = "25"
+                </code>
+            </pre>
+          </section>
+          <section>
+            <h2 class="text-4xl font-bold">Que pasara ...</h2>
+            <pre>
+                <code class="text-left" data-trim data-noescape data-line-numbers="1">
+                    Number + soyTexto
+                </code>
+            </pre>
+          </section>
+          <section>
+            <h2 class="text-2xl font-bold">To be continue</h2>
+            <h2 class="text-4xl font-bold line-through opacity-50">
+              Formas de declaracion
+            </h2>
+            <pre>
+                <code class="text-left" class="line-through opacity-50" data-trim data-noescape data-line-numbers="1-3">
+                    var variable = "2";
+                    let variableLocal = "2";
+                    const constante = "2";
+                </code>
+            </pre>
+          </section>
+        </section>
+        <section>
+          <section>
+            <img
+              class="h-24 mx-auto"
+              src="../assets/imgs/Basicos_Plus.svg"
+              alt="javascript"
+            />
+          </section>
+          <section>
+            <h2 class="text-4xl font-bold">Funciones</h2>
+            <p class="text-2xl">Bloque basico de cualquier programa</p>
+          </section>
+          <section>
+            <pre>
+                <code class="text-left" data-trim data-noescape>
+                    function suma() {
+                        return 2 + 2;
+                    }
+                </code>
+            </pre>
+          </section>
+          <section>
+            <h2 class="text-4xl font-bold">Las Partes</h2>
+          </section>
+          <section>
+            <pre>
+                <code class="text-left" data-trim data-noescape data-line-numbers="1|2|3|4|5|6|7">
+                    function // Palabra clave que indica que es una funcion
+                    suma // Nombre de la funcion
+                    () // Parametros ... thoon
+                    { // Llave de inicio
+                    return // Palabra clave que termina la funcion y devuelve la solucion del codigo
+                    2 + 2; // El codigo que se ejecuta
+                    } // Llave de cierre
+                </code>
+            </pre>
+          </section>
+          <section>
+            <h2 class="text-4xl font-bold">Hagamos cuentas</h2>
+            <p class="text-2xl">Funciones que nos ayuden</p>
+          </section>
+          <section>
+            <pre>
+                <code class="text-left" data-trim data-noescape data-line-numbers="1-3|5-7|9-11">
+                    function dosMasDos() {
+                        return 2 + 2;
+                    }
+                    // o
+                    function cienMenosSiete() {
+                        return 100 - 7;
+                    }
+                    // o
+                    function divicionYMultiplisacion() {
+                        return 10 * 5 / 2;
+                    }
+                </code>
+            </pre>
+          </section>
+          <section>
+            <h2 class="text-4xl font-bold">No muy util verdad...</h2>
+            <p class="text-2xl">Veamos si podemos armar algo reutilizable</p>
+          </section>
+          <section>
+            <pre>
+                <code class="text-left" data-trim data-noescape>
+                    function suma(num1, num2) {
+                        return num1 + num2;
+                    }
+                </code>
+            </pre>
+          </section>
+          <section>
+            <h2 class="text-4xl font-bold">Parametros</h2>
+            <p>
+              num1 y num2 son parametros. Nos permite pasar datos a una funcion,
+              para hacerlo mas flexible
+            </p>
+          </section>
+          <section>
+            <h2 class="text-4xl font-bold">Funcionseption</h2>
+            <pre>
+                <code class="text-left" data-trim data-noescape>
+                    function sumaYDivision(suma1, suma2, division) {
+                        return suma(suma1, suma2) / division;
+                    }
+                </code>
+            </pre>
+          </section>
+          <section>
+            <h2 class="text-4xl font-bold">Sumando Textos</h2>
+            <p class="text-2xl">No perdimos la cabeza, se puede</p>
+          </section>
+          <section>
+            <pre>
+                <code class="text-left" data-trim data-noescape>
+                    function presentar(nombre, apellido) {
+                        return nombre + apellido;
+                    }
+                </code>
+            </pre>
+          </section>
+          <section>
+            <h2 class="text-4xl font-bold">No salio bien, no?</h2>
+          </section>
+          <section>
+            <pre>
+                <code class="text-left" data-trim data-noescape>
+                    function presentar(nombre, apellido) {
+                        return nombre + ' ' + apellido;
+                    }
+                </code>
+            </pre>
+          </section>
+          <section>
+            <h2 class="text-4xl font-bold">Feliz ahora!?</h2>
+          </section>
+        </section>
+        <section>
+          <section>
+            <img
+              class="h-24 mx-auto"
+              src="../assets/imgs/Condicionales.svg"
+              alt="javascript"
+            />
+          </section>
+          <section>
+            <h2 class="text-4xl font-bold">What if?</h2>
+            <p class="text-2xl">Como manejamos preguntas</p>
+          </section>
+          <section>
+            <pre>
+                <code class="text-left" data-trim data-noescape>
+                    if(2 < 5) {
+                        'Soy Menor';
+                    }
+                </code>
+            </pre>
+          </section>
+          <section>
+            <h2 class="text-4xl font-bold">Las Partes</h2>
+          </section>
+          <section>
+            <pre>
+                <code class="text-left" data-trim data-noescape data-line-numbers="1|2|3|4-5|6">
+                    if // Palabra clave que indica comparacion
+                    (2 < 5) // Condicion
+                    { // Llave de inicio
+                    // Este codigo solo se ejecuta si la condicion se cumple
+                    'Soy Menor'; // El codigo que se ejecuta
+                    } // Llave de cierre
+                </code>
+            </pre>
+          </section>
+          <section>
+            <h2 class="text-4xl font-bold">NOT</h2>
+            <p class="text-2xl">Como preguntamos si no</p>
+          </section>
+          <section>
+            <pre>
+                <code class="text-left" data-trim data-noescape data-line-numbers="1|2-4">
+                    // Para negar una condicion usamos el !
+                    if( 4 != 3 ) {
+                        'Bueno, no soy 4'
+                    }
+                </code>
+            </pre>
+          </section>
+          <section>
+            <h2 class="text-4xl font-bold">Mostremos Cosas</h2>
+            <p class="text-2xl">La consola es nuestra amiga</p>
+          </section>
+          <section>
+            <pre>
+                <code class="text-left" data-trim data-noescape data-line-numbers="1|2-5|6|7">
+                    function soyMayor(edad) {
+                        if(edad >= 18) {
+                            console.log('Soy Mayor');
+                            return
+                        }
+                        console.log('Soy Menor');
+                    }
+                </code>
+            </pre>
+          </section>
+          <section>
+            <h2 class="text-4xl font-bold">Que esta pasando?</h2>
+            <pre>
+                <code class="text-left" data-trim data-noescape data-line-numbers="2">
+                    function soyMayor(edad) {
+                        if(edad >= 18) {
+                            // ...
+                        }
+                    }
+                </code>
+            </pre>
+          </section>
+          <section>
+            <h2 class="text-4xl font-bold">Este es otro tipo de dato</h2>
+            <p class="text-2xl">Los booleanos, true y false (y mas)</p>
+          </section>
+          <section>
+            <p class="text-2xl">Como tipo de datos podemos declaralo</p>
+            <pre>
+                <code class="text-left" data-trim data-noescape data-line-numbers="1-2|3|4-6|7-9|10|11|12">
+                    var edad = 29;
+                    var soyMayor = edad >= 18;
+                    function entroAlBar(siEsMayor) {
+                        if(siEsMayor) {
+                            console.log('Entre Nomas');
+                        }
+                        if(!siEsMayor) {
+                            console.log('A casa amigo');
+                        }
+                    }
+                    console.log(soyMayor);
+                    entroAlBar(soyMayor);
+                </code>
+            </pre>
+          </section>
+          <section>
+            <h2 class="text-4xl font-bold">Veamos todas las comparativas</h2>
+            <pre>
+                <code class="text-left" data-trim data-noescape>
+                    var numeroUno = 4;
+                    var numeroDos = 3;
+                    console.log(numeroUno > numeroDos);
+                    console.log(numeroUno < numeroDos);
+                    console.log(numeroUno >= numeroDos);
+                    console.log(numeroUno <= numeroDos);
+                    console.log(numeroUno == numeroDos);
+                    console.log(numeroUno === numeroDos);
+                    console.log(numeroUno != numeroDos);
+                    console.log(numeroUno !== numeroDos);
+                </code>
+            </pre>
+          </section>
+          <section>
+            <h2 class="text-4xl font-bold">Y mas...</h2>
+            <p class="text-2xl">Que pasa con las comparaciones</p>
+          </section>
+          <section>
+            <p class="text-2xl">
+              Podemos comparar todo tipo de dato... pero como funciona
+            </p>
+            <pre>
+                <code class="text-left" data-trim data-noescape>
+                    console.log(2 > '2');
+                    console.log('uno' < 4);
+                    console.log('uno' >= 'menos uno');
+                    console.log(2 <= 'mil');
+                    console.log(2 == '2');
+                    console.log(2 === '2');
+                    console.log(true != 'true');
+                    console.log(false !== 'false');
+                </code>
+            </pre>
+            <p>
+              Estos son los tipos de comparaciones y el concepto de truthy y
+              falsy
+            </p>
+            <!-- Secret link -->
+            <!-- https://medium.com/coding-at-dawn/what-are-falsy-values-in-javascript-ca0faa34feb4 -->
+          </section>
+          <section>
+            <h2 class="text-4xl font-bold">Tambien y Tambien si</h2>
+            <pre>
+                <code class="text-left" data-trim data-noescape data-line-numbers="1|2|3-4|5-6|7-9|10|11|12|13-14|15-16">
+                    var miEdad = 15;
+                    function costoDeBondi(edad) {
+                        if(edad < 8) {
+                            return '$1.00';
+                        } else if(edad < 50) {
+                            return '$20.00';
+                        } else {
+                            return '$5.00';
+                        }
+                        return '$0.00';
+                    }
+                    costoDeBondi(miEdad);
+                    miEdad = 2;
+                    costoDeBondi(miEdad);
+                    miEdad = 62;
+                    costoDeBondi(miEdad);
+                </code>
+            </pre>
+          </section>
+          <section>
+            <pre>
+                <code class="text-left" data-trim data-noescape data-line-numbers="1|2|3|4|5|6-16">
+                    function perfectTinder(sexo, edad, colorDePelo, altura) {
+                        if(sexo == 'Mujer') {
+                            if(edad >= 18) {
+                                if(colorDePelo == 'Rojo') {
+                                    if(altura >= 175) {
+                                        return 'Match!';
+                                    }
+                                }
+                            }
+                        }
+                    }
+                </code>
+            </pre>
+          </section>
+          <section>
+            <h2 class="text-4xl font-bold">There has to be an easyer way</h2>
+            <img
+              src="https://media.giphy.com/media/i4gLlAUz2IVIk/giphy.gif"
+              alt=""
+            />
+          </section>
+          <section>
+            <h2 class="text-4xl font-bold">Y / O</h2>
+            <p>Comparaciones Complejas</p>
+          </section>
+          <section>
+            <pre>
+                <code class="text-left" data-trim data-noescape data-line-numbers="1|2|3-4|5-6|7-9|10|11|12|13-14|15-16">
+                    function perfectTinder(sexo, edad, colorDePelo, altura) {
+                        if(sexo == 'Mujer' && edad >= 18 && colorDePelo == 'Rojo' && altura >= 175) {
+                            return 'Match!';
+                        }
+                    }
+                </code>
+            </pre>
+          </section>
+          <section>
+            <pre>
+                <code class="text-left" data-trim data-noescape data-line-numbers="1|2|3-4|5-6|7-9|10|11|12|13-14|15-16">
+                    function notSoPerfectTinder(sexo, edad, colorDePelo, altura) {
+                        if(sexo == 'Mujer' && edad >= 18 && colorDePelo == 'Rojo' || sexo == 'Mujer' && edad >= 18 && altura >= 175) {
+                            return 'Match!';
+                        }
+                    }
+                </code>
+            </pre>
+          </section>
+          <section>
+            <pre>
+                <code class="text-left" data-trim data-noescape data-line-numbers="1|2|3-4|5-6|7-9|10|11|12|13-14|15-16">
+                    function anyTinder(sexo, edad, colorDePelo, altura) {
+                        if(sexo == 'Mujer' || edad >= 18 || colorDePelo == 'Rojo' || altura >= 175) {
+                            return 'Match!';
+                        }
+                    }
+                </code>
+            </pre>
+          </section>
+          <section>
+            <h2 class="text-4xl font-bold">Y el O???</h2>
+            <p>Podemos mejorar un poco la funcion!</p>
+          </section>
+          <section>
+            <pre>
+                <code class="text-left" data-trim data-noescape data-line-numbers="1|2|3-4|5-6|7-9|10|11|12|13-14|15-16">
+                    function notSoPerfectTinder(sexo, edad, colorDePelo, altura) {
+                        if(sexo == 'Mujer' && edad >= 18 && (colorDePelo == 'Rojo' || altura >= 175)) {
+                            // Esto significa que va a tener que ser Mujer
+                            //      va a tener que se mayor de edad
+                            //      y puede ser peliroja o mayor a 1,75cm
+                            return 'Match!';
+                        }
+                    }
+                </code>
+            </pre>
+          </section>
+          <section>
+            <p>Que pasa si sacamos los parentesis</p>
+            <pre>
+                <code class="text-left" data-trim data-noescape data-line-numbers="1|2|3-4|5-6|7-9|10|11|12|13-14|15-16">
+                    function notSoPerfectTinder(sexo, edad, colorDePelo, altura) {
+                        if(sexo == 'Mujer' && edad >= 18 && colorDePelo == 'Rojo' || altura >= 175) {
+                            // El o || divide la condicion, es decir
+                            // Puede ser mujer, mayor de 18 y colorada
+                            // o puede ser cualquier cosa mayor a 1,75cm
+                            return 'Match!';
+                        }
+                    }
+                </code>
+            </pre>
+          </section>
+          <section>
+            <h2 class="text-4xl font-bold">Ejercisios</h2>
+            <p>Intentemos algunas cosas</p>
+          </section>
+          <section>
+            <h2 class="text-4xl font-bold">Premios</h2>
+            <p>
+              Necesitamos una funcion que dado el numero de la posicion nos diga
+              que medalla se lleva. <br />
+              Sea Oro para el primero, Plata al segundo y Bronce al tercero.
+              <br />
+              Si no es ninguno, deberia decir que no tiene medalla
+            </p>
+          </section>
+          <section>
+            <pre>
+                <code class="text-left" data-trim data-noescape data-line-numbers="1|2|3-4|5-6|7-9|10|11|12|13-14|15-16">
+                    function premios(posicion) {
+                        // Codigo
+                    }
+                    console.log(premios(1));
+                    console.log(premios(-100));
+                    console.log(premios(3));
+                    console.log(premios(2));
+                    console.log(premios(10));
+                </code>
+            </pre>
+          </section>
+        </section>
+        <section>
+          <section>
+            <img
+              class="h-24 mx-auto"
+              src="../assets/imgs/Ciclos.svg"
+              alt="javascript"
+            />
+          </section>
+          <section>
+            <h2 class="text-4xl font-bold">Que son los Ciclos?</h2>
+            <p class="text-2xl">Formas de repetir codigos varias veces</p>
+          </section>
+          <section>
+            <h2 class="text-4xl font-bold">Que son los Ciclos?</h2>
+            <p class="text-2xl">Formas de repetir codigos varias veces</p>
+          </section>
+          <section>
+            <h2 class="text-4xl font-bold">Que son los Ciclos?</h2>
+            <p class="text-2xl">Formas de repetir codigos varias veces</p>
+          </section>
+          <section>
+            <p class="text-2xl mb-4">Jajaja</p>
+            <img
+              class="mx-auto rounded shadow-lg"
+              src="https://media.giphy.com/media/dzvcOaG7QsRd6/giphy.gif"
+              alt=""
+            />
+          </section>
+          <section>
+            <h2 class="text-4xl font-bold">While</h2>
+            <p class="text-2xl">Mientras se cumple, se repite</p>
+          </section>
+          <section>
+            <pre>
+                <code class="text-left" data-trim data-noescape data-line-numbers="1|2|3|4|1-5">
+                    var number = 0
+                    while (number < 10) {
+                      console.log(number);
+                      number = number + 1;
+                    }
+                </code>
+            </pre>
+          </section>
+          <section>
+            <p>Probemos cambiando la condicion</p>
+            <pre>
+                <code class="text-left" data-trim data-noescape>
+                    var number = 0
+                    while (number <= 10) {
+                      console.log(number);
+                      number = number + 2;
+                    }
+                </code>
+            </pre>
+          </section>
+          <section>
+            <p>En definitiva el while necesita un booleano</p>
+            <pre>
+                <code class="text-left" data-trim data-noescape data-line-numbers="1|2|3|4-5|6-8|1-10">
+                    var sigo = true
+                    var vueltas = 0
+                    while (sigo) {
+                      vueltas += 1 // Eso es una forma rapida de usar
+                                   // el valor actual de la variable
+                      console.log(vueltas);
+                      sigo = vueltas < 5;
+                    }
+                </code>
+            </pre>
+          </section>
+          <section>
+            <h2 class="text-4xl font-bold">Ejercicio</h2>
+            <p class="text-2xl">
+              Usando <strong>while</strong> hagamos que la consola nos presente
+              los numeros del uno al nueve de la siguinte manera "Hola soy x!"
+            </p>
+          </section>
+          <section>
+            <h2 class="text-4xl font-bold">Do While</h2>
+            <p class="text-2xl">Hagamos mientras se cumplea</p>
+          </section>
+          <section>
+            <p class="text-3xl mb-4">No hace lo mismo que el While?</p>
+            <img
+              class="mx-auto rounded h-40"
+              src="https://media.giphy.com/media/uNE1fngZuYhIQ/giphy.gif"
+              alt=""
+            />
+          </section>
+          <section>
+            <p class="text-2xl">Usemos algo similar a lo anterior</p>
+            <pre>
+                <code class="text-left" data-trim data-noescape data-line-numbers="1|2|3|4-5|6|1-10">
+                    var sigo = false
+                    var vueltas = 0
+                    do {
+                      vueltas += 1
+                      console.log(vueltas);
+                    } while (sigo);
+                </code>
+            </pre>
+          </section>
+          <section>
+            <h2 class="text-4xl font-bold">Tenemos otro ciclo.</h2>
+            <p class="text-2xl">
+              El <strong>for</strong>... que tiene mas perillitas
+            </p>
+          </section>
+          <section>
+            <pre>
+                <code class="text-left" data-trim data-noescape data-line-numbers="1-10">
+                    for(i = 0; i < 10;  i++) {
+                      console.log('Soy ' + i);
+                    }
+                </code>
+            </pre>
+          </section>
+          <section>
+            <h2 class="text-4xl font-bold">Como dice mi amigo Jack</h2>
+            <p class="text-2xl">Vamos por partes!</p>
+          </section>
+          <section>
+            <pre>
+                <code class="text-left" data-trim data-noescape data-line-numbers="1|2|3|4|5|6|7|8|1-10">
+                    for // Palabra Clave
+                    ( // Parentecis del cerebro
+                      i = 0; // Declaracion (se ejecuta solo una vez)
+                      i < 10; // Corte (chequeo logico cada vuelta)
+                      i++ // Modificador (ejecuta cada vuelta)
+                    ) { // Cierra y llave de inicio
+                      console.log('Soy ' + i); // Codigo a ejecutar cada vuelta
+                    } // Llave de cierre
+                </code>
+            </pre>
+          </section>
+          <section>
+            <p class="text-2xl">Veamos un poco mas profundo</p>
+          </section>
+          <section>
+            <pre class="max-w-sm mx-auto">
+                <code class="text-left" data-trim data-noescape>
+                    for ( i = 0; i < 10; i++ ) {
+                      // Codigo
+                    }
+                </code>
+            </pre>
+            <div class="mb-6">
+              <p class="text-2xl mb-2">
+                Como vemos entre los parentesis se instancia la variable
+                <strong>i</strong>
+              </p>
+              <samll>(Este se puede llamar como quieras)</samll>
+            </div>
+            <div class="mb-6">
+              <p class="text-2xl mb-2">
+                Despues tenemos el corte. La condicion a cumplit para cortar el
+                ciclo
+              </p>
+              <samll>
+                (Puede ser casi cualquier cosa, se tiene que poder evaluar)
+              </samll>
+            </div>
+            <div class="mb-6">
+              <p class="text-2xl mb-2">
+                Y despues el modificador. como afectamos la variable, para
+                evitar el loop infinito
+              </p>
+            </div>
+          </section>
+          <section>
+            <h2 class="text-4xl font-bold">Como dice mi amigo Jack</h2>
+            <p class="text-2xl">Vamos por partes!</p>
+          </section>
+          <section>
+            <pre>
+                <code class="text-left" data-trim data-noescape data-line-numbers="1|2|3|4|5|6|7|8|1-10">
+                    for // Palabra Clave
+                    ( // Parentecis del cerebro
+                      i = 0; // Declaracion (se ejecuta solo una vez)
+                      i < 10; // Corte (chequeo logico cada vuelta)
+                      i++ // Modificador (ejecuta cada vuelta)
+                    ) { // Cierra y llave de inicio
+                      console.log('Soy ' + i); // Codigo a ejecutar cada vuelta
+                    } // Llave de cierre
+                </code>
+            </pre>
+          </section>
+          <section>
+            <h2 class="text-4xl font-bold">Feliz ahora!?</h2>
+          </section>
+        </section>
+      </div>
+    </div>
+
+    <script src="../dist/reveal.js"></script>
+    <script src="../plugin/notes/notes.js"></script>
+    <script src="../plugin/markdown/markdown.js"></script>
+    <script src="../plugin/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      });
+    </script>
+  </body>
+</html>
