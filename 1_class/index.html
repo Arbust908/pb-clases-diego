@@ -638,8 +638,9 @@
             </pre>
           </section>
           <section>
-            <p class="text-2xl">Interrumpimos con un mensaje importante</p>
+            <p class="text-2xl mb-4">Interrumpimos con un mensaje importante</p>
             <img
+              class="mx-auto rounded w-1/3 mt-6"
               src="https://media.giphy.com/media/l2Jeg0fCfwmWcPQ7m/giphy.gif"
               alt=""
             />
@@ -661,7 +662,7 @@
               por otro
             </p>
             <pre>
-                <code class="text-left" data-trim data-noescape data-line-numbers="1|2|3|4-5|6|1-10">
+                <code class="text-left" data-trim data-noescape data-line-numbers="1|2-4|5-7">
                     var num = 6;
                     if(num % 2 === 0) {
                       console.log('Soy Divisible por 2')
@@ -678,9 +679,8 @@
             <p class="text-2xl">
               Hagamos una funcion que nos diga si un numero es par o inpar
             </p>
-          </section>
-          <section>
             <img
+              class="mx-auto rounded w-1/3 mt-6"
               src="https://media.giphy.com/media/o0vwzuFwCGAFO/giphy.gif"
               alt=""
             />
@@ -753,35 +753,154 @@
             </div>
           </section>
           <section>
-            <h2 class="text-4xl font-bold">Como dice mi amigo Jack</h2>
-            <p class="text-2xl">Vamos por partes!</p>
+            <h2 class="text-4xl font-bold">Ejercicio</h2>
+            <p class="text-2xl mb-4">
+              Hagamos una funcion que nos cuente, dado dos numeros, cuantos de
+              los numero entre ellos son: Pares y multiplos de 3
+            </p>
+            <img
+              class="mx-auto rounded w-1/3 mt-6"
+              src="https://media.giphy.com/media/xonOzxf2M8hNu/giphy.gif"
+              alt=""
+            />
+          </section>
+          <section>
+            <h2 class="text-4xl font-bold">Variables</h2>
+            <p class="text-2xl">
+              Depende donde la pongamos es donde la puedo usar
+            </p>
           </section>
           <section>
             <pre>
-                <code class="text-left" data-trim data-noescape data-line-numbers="1|2|3|4|5|6|7|8|1-10">
-                    for // Palabra Clave
-                    ( // Parentecis del cerebro
-                      i = 0; // Declaracion (se ejecuta solo una vez)
-                      i < 10; // Corte (chequeo logico cada vuelta)
-                      i++ // Modificador (ejecuta cada vuelta)
-                    ) { // Cierra y llave de inicio
-                      console.log('Soy ' + i); // Codigo a ejecutar cada vuelta
-                    } // Llave de cierre
+                <code class="text-left" data-trim data-noescape data-line-numbers="1|2|3|4|5|6|7|1-10">
+                    const limite = 10
+                    console.log(multiplicador)
+                    for(let i = 0; i < limite; i++) {
+                      var multiplicador = 2;
+                      let resultado = multiplicador * i;
+                      console.log(resultado);
+                    }
+                    console.log(resultado);
                 </code>
             </pre>
           </section>
           <section>
-            <h2 class="text-4xl font-bold">Ejercicio</h2>
+            <pre>
+                <code class="text-left" data-trim data-noescape data-line-numbers="2,4|5,8|6">
+                    const limite = 10
+                    console.log(multiplicador)
+                    for(let i = 0; i < limite; i++) {
+                      var multiplicador = 2;
+                      let resultado = multiplicador * i;
+                      console.log(resultado);
+                    }
+                    console.log(resultado);
+                </code>
+            </pre>
+          </section>
+          <section>
+            <h2 class="text-4xl font-bold">Variables</h2>
             <p class="text-2xl">
-              Hagamos una funcion que nos cuente, dado dos numeros, cuantos de
-              los numero entre ellos son: Pares y multiplos de 3
+              Depende donde la pongamos es donde la puedo usar
             </p>
           </section>
           <section>
+            <p class="text-2xl">
+              <strong>var</strong> cuando lo pones el codigo genera la
+              definicion de variable al principio de todo.
+              <em>Se llama Hoisting</em>
+            </p>
+            <p class="text-2xl">
+              <strong>let</strong> cuando lo pones el codigo genera la
+              definicion solo en el bloque de codigo en donde se define
+            </p>
+            <p class="text-2xl">
+              <strong>const</strong> genera una variable global el cual no se
+              puede re definir y esta accesible en todos lados
+            </p>
+          </section>
+          <section>
+            <h2 class="text-4xl font-bold">Break y Continue</h2>
+            <p class="text-2xl">Podemos cortar o saltear el ciclo</p>
+          </section>
+          <section>
             <img
+              class="mx-auto rounded w-1/3 mt-6"
               src="https://media.giphy.com/media/o0vwzuFwCGAFO/giphy.gif"
               alt=""
             />
+          </section>
+          <section>
+            <pre>
+                <code class="text-left" data-trim data-noescape>
+                    const limite = 10
+                    const corte = 10
+                    for(let i = 0; i < limite; i++) {
+                      console.log('Soy ' + i);
+                      if(i === corte) {
+                        break;
+                      }
+                      console.log('Sobrevivi porque no soy ' + corte);
+                    }
+                </code>
+            </pre>
+          </section>
+          <section>
+            <pre>
+                <code class="text-left" data-trim data-noescape>
+                    const limite = 10
+                    const corte = 10
+                    for(let i = 0; i < limite; i++) {
+                      console.log('Soy ' + i);
+                      if(i === corte) {
+                        continue;
+                      }
+                      console.log('Sobrevivi porque no soy ' + corte);
+                    }
+                </code>
+            </pre>
+          </section>
+          <section>
+            <h2 class="text-4xl font-bold mb-4">Cosas del futuro</h2>
+            <img
+              class="mx-auto rounded w-1/3 mt-6"
+              src="https://media.giphy.com/media/ZZkCo8zKWtt2ZgozfX/giphy.gif"
+              alt=""
+            />
+          </section>
+          <section>
+            <h2 class="text-4xl font-bold mb-4">Funciones de Javascript</h2>
+            <pre>
+                <code class="text-left" data-trim data-noescape>
+                    // funciones para datos del tipo String
+                    let string = 'diega';
+                    string.padEnd(3, '.');
+                    string.padStart(2, '0');
+                    string.repeat(2);
+                    string.replace('die', 'live');
+                    string.includes('die');
+                </code>
+            </pre>
+          </section>
+          <section>
+            <h2 class="text-4xl font-bold mb-4">Funciones de Javascript</h2>
+            <ul>
+              <li>
+                https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/includes
+              </li>
+              <li>
+                https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/padEnd
+              </li>
+              <li>
+                https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/padStart
+              </li>
+              <li>
+                https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/repeat
+              </li>
+              <li>
+                https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace
+              </li>
+            </ul>
           </section>
           <section>
             <h2 class="text-4xl font-bold">Feliz ahora!?</h2>
