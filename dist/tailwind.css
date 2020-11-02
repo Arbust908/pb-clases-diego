@@ -762,6 +762,14 @@ video {
   padding: 0.75rem;
 }
 
+.pr-4 {
+  padding-right: 1rem;
+}
+
+.pb-4 {
+  padding-bottom: 1rem;
+}
+
 .pt-12 {
   padding-top: 3rem;
 }
@@ -835,6 +843,10 @@ video {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.w-1\/2 {
+  width: 50%;
 }
 
 .w-1\/3 {
