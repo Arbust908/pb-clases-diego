@@ -643,9 +643,9 @@ video {
   background-image: linear-gradient(to right, var(--gradient-color-stops));
 }
 
-.from-red-500 {
-  --gradient-from-color: #f56565;
-  --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(245, 101, 101, 0));
+.from-red-600 {
+  --gradient-from-color: #e53e3e;
+  --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(229, 62, 62, 0));
 }
 
 .to-yellow-500 {
@@ -726,6 +726,10 @@ video {
 
 .font-bold {
   font-weight: 700;
+}
+
+.h-8 {
+  height: 2rem;
 }
 
 .h-16 {
