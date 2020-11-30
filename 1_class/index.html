@@ -1680,46 +1680,276 @@
             </pre>
             </main>
           </section>
-          <!-- <section>
-            <main>
+          <section>
               <main class="w-8/12 mx-auto space-y-3">
+                <img
+                  class="rounded w-1/3 mt-6 max-w-lg mx-auto"
+                  src="https://media.giphy.com/media/Up8GmvOMbSdvJWvhgI/giphy.gif"
+                  alt=""
+                />
                 <h2 class="text-4xl font-bold mb-4">Mas Ejercicios</h2>
                 <p class="text-2xl">
-                Necesitamos una función masMenos que reciba un array y devuelva otro con los siguientes tres números:
-              </p>
+                  Armemos juntos una funcion que nos tire el numero de fibonacci segun la posicion que le pasemos, teniendo la seccuencia de fibonacci como 1, 1, 2, 3, 5, 8, ...
+                  Ej: si le pasamos 4 nos deberia dar 3
+                </p>
+              </main>
+          </section>
+          <section>
+              <main class="w-8/12 mx-auto space-y-3">
+                <p class="text-2xl">
+                  Tenemos una forma mas interesante de hacerlo. Porque se puede decir que cuando necesitamos el fibon(4) vamos a queres el de los dos anteriores para poder calcularlo.
+                  y si ya estamos armando una funcion podemos usarla adentro de si misma pero con otros parametros
+                </p>
+              </main>
+          </section>
+          <section>
+              <main class="w-8/12 mx-auto space-y-3">
                 <pre>
-                    <code class="text-left" data-trim data-noescape>
-                        let array = [1,2,3,4,'Pancho'];
-                        console.log(array.length);
-                        console.log(array.push('Diega'));
-                        console.log(array.pop());
-                        console.log(array.indexOf(3));
-                    </code>
-                </pre>
+                <code class="text-left" data-trim data-noescape>
+                    function fibon(indice) {
+                      return fibon(indice - 1) + fibon(indice - 2);
+                    }
+                </code>
+            </pre>
+              </main>
+          </section>
+          <section>
+              <main class="w-8/12 mx-auto space-y-3">
+                <img
+                  class="rounded w-2/3 mt-6 max-w-lg mx-auto"
+                  src="https://media.giphy.com/media/ensk4bvNQhoBbHCwZa/giphy.gif"
+                  alt=""
+                />
+                <h2 class="text-4xl font-bold mb-4">Somos tan fantasticos!</h2>
+                <p class="text-6xl">
+                  ;D
+                </p>
+              </main>
+          </section>
+          <section>
+              <main class="w-8/12 mx-auto space-y-3">
+                <img
+                  class="rounded w-2/3 mt-6 max-w-lg mx-auto"
+                  src="https://media.giphy.com/media/L18eMUGDk3vcwOPUGw/giphy.gif"
+                  alt=""
+                />
+                <h2 class="text-4xl font-bold mb-4">Nooooo!</h2>
+                <p class="text-6xl">
+                  Todo rompe por todos lados!
+                </p>
+              </main>
+          </section>
+          <section>
+              <main class="w-8/12 mx-auto space-y-3">
+                <pre>
+                  <code class="text-left" data-trim data-noescape>
+                      function fibon(indice) {
+                        console.log(indice)
+                        if(indice === 0) { return 0}
+                        if(indice <= 1) { return 1}
+                        return fibon(indice - 1) + fibon(indice - 2);
+                      }
+                  </code>
+              </pre>
+              </main>
+          </section>
+          <section>
+              <main class="w-8/12 mx-auto space-y-3">
+                <img
+                  class="rounded w-2/3 mt-6 max-w-lg mx-auto"
+                  src="./assets/Artboard 30.svg"
+                  alt=""
+                />
+                <p class="text-xl">
+                  Para resolver fibon(6) necesitamos resolver fibon(5) y fibon (4) <br>
+                  Tonces seguimos en fibon(5)
+                </p>
+              </main>
+          </section>
+          <section>
+              <main class="w-8/12 mx-auto space-y-3">
+                <img
+                  class="rounded w-2/3 mt-6 max-w-lg mx-auto"
+                  src="./assets/Artboard 31.svg"
+                  alt=""
+                />
+                <p class="text-xl">
+                  Para fibon(5) necesitamos los valores de fibon(4) y fibon (3) <br>
+                  Tonces seguimos en fibon(4)
+                </p>
+              </main>
+          </section>
+          <section>
+              <main class="w-8/12 mx-auto space-y-3">
+                <img
+                  class="rounded w-2/3 mt-6 max-w-lg mx-auto"
+                  src="./assets/Artboard 32.svg"
+                  alt=""
+                />
+                <p class="text-xl">
+                  Para fibon(4) necesitamos fibon(3) y fibon (2) <br>
+                  Seguimos con fibon(3)
+                </p>
+              </main>
+          </section>
+          <section>
+              <main class="w-8/12 mx-auto space-y-3">
+                <img
+                  class="rounded w-2/3 mt-6 max-w-lg mx-auto"
+                  src="./assets/Artboard 33.svg"
+                  alt=""
+                />
+                <p class="text-xl">
+                  Para fibon(3) necesitamos fibon(2) y fibon (1) <br>
+                  Seguimos con fibon(2)
+                </p>
+              </main>
+          </section>
+          <section>
+              <main class="w-8/12 mx-auto space-y-3">
+                <img
+                  class="rounded w-2/3 mt-6 max-w-lg mx-auto"
+                  src="./assets/Artboard 34.svg"
+                  alt=""
+                />
+                <p class="text-xl">
+                  Y para fibon(1) necesitamos fibon(1) y fibon (0)
+                </p>
+              </main>
+          </section>
+            <section>
+              <main class="w-8/12 mx-auto space-y-3">
+                <img
+                  class="rounded w-2/3 mt-6 max-w-lg mx-auto"
+                  src="./assets/Artboard 35.svg"
+                  alt=""
+                />
+                <img
+                  class="rounded w-2/3 mt-6 max-w-lg mx-auto"
+                  src="./assets/Artboard 36.svg"
+                  alt=""
+                />
+                <img
+                  class="rounded w-2/3 mt-6 max-w-lg mx-auto"
+                  src="./assets/Artboard 37.svg"
+                  alt=""
+                />
+                <p class="text-xl">
+                  Por ultimo fibon(1) resuelve a 1 y fibon(0) resuelva a 0. <br>
+                  Y de ahi podemos empezar a subir con esos valores.
+                </p>
+              </main>
+          </section>
+          <section>
+              <main class="w-8/12 mx-auto space-y-3">
+                <img
+                  class="rounded w-full mt-6 max-w-xl mx-auto"
+                  src="./assets/Artboard 38.svg"
+                  alt=""
+                />
+                <p class="text-xl">
+                  Como se habra visto, se repiten mucho las funciones. Funciona pero si le tiramos un numero grande o varias colapsa.
+                </p>
               </main>
           </section>
           <section class="space-y-3 leading-tight pb-4">
             <main class="w-8/12 mx-auto space-y-3">
               <img
-                class="rounded w-1/3 mt-6 max-w-lg mx-auto"
-                src="https://media.giphy.com/media/H5mx6uIAAiaru/giphy.gif"
+                class="rounded w-2/3 mt-6 max-w-lg mx-auto"
+                src="https://media.giphy.com/media/3o84Ughbtrcsp8OAM0/giphy.gif"
                 alt=""
               />
-              <h2 class="text-4xl font-bold">masMenos</h2>
+            </main>
+          </section>
+          <section class="space-y-3 leading-tight pb-4">
+            <main class="w-8/12 mx-auto space-y-3">
+              <img
+                class="rounded w-2/3 mt-6 max-w-lg mx-auto"
+                src="https://media.giphy.com/media/tsUDLjvigc27B9pBPs/giphy.gif"
+                alt=""
+              />
+            </main>
+          </section>
+          <section class="space-y-3 leading-tight pb-4">
+            <main class="w-8/12 mx-auto space-y-3">
+              <h2 class="text-4xl font-bold">Vamos a mejorarlos</h2>
               <p class="text-2xl">
                 Necesitamos una función masMenos que reciba un array y devuelva otro con los siguientes tres números:
               </p>
-              <p class="text-lg">
-                > en la primera posición, la fracción de números que son positivos <br>
-                > en la segunda posición, la fracción de números que son cero <br>
-                > en la última posición, la fracción de números que son negativos <br>
+              <pre>
+                  <code class="text-left" data-trim data-noescape>
+                      function fibon(indice, memoria) {
+                        memoria = memoria ? memoria : {}
+                        console.log(indice)
+                        if (memoria[indice]) { return memoria[indice] }
+                        if(indice === 0) { return 0}
+                        if(indice <= 1) { return 1}
+                        return memo[indice] = 
+                            fibon(indice - 1, memoria) + fibon(indice - 2, memoria);
+                      }
+                  </code>
+              </pre>
+            </main>
+          </section>
+          <section class="space-y-3 leading-tight pb-4">
+            <main class="w-8/12 mx-auto space-y-3">
+              <img
+                class="rounded w-1/3 mt-6 max-w-lg mx-auto"
+                src="https://media.giphy.com/media/9hSsOshicxQHe/giphy.gif"
+                alt=""
+              />
+              <h2 class="text-4xl font-bold">Podemos recortar pa que sea mas pequeño</h2>
+              <p class="text-2xl">
+                Siempre que no comprometa la lectura
               </p>
-              <p class="text-lg opacity-75">
-                Por ejemplo, masMenos([1, 2, 0, -1]) debería devolver [0.5, 0.25, 0.25], dado que hay 50% de positivos, 25% de ceros, y 25% de negativos.
+              <pre>
+                <code class="text-left" data-trim data-noescape>
+                      function fibon(num, memo) {
+                        memo = memo ? memo : {}
+                        if ( memo[num] ) { return memo[num] }
+                        if ( num <= 1 ) { return num }
+                        return memo[num] = fibon(num - 1, memo) + fibon(num - 2, memo);
+                      }
+                  </code>
+              </pre>
+            </main>
+          </section>
+          <section class="space-y-3 leading-tight pb-4">
+            <main class="w-8/12 mx-auto space-y-3">
+              <img
+                class="rounded w-4/5 mt-6 max-w-lg mx-auto"
+                src="https://media.giphy.com/media/JOrBpgP5CkzU4/giphy.gif"
+                alt=""
+              />
+              <h2 class="text-4xl font-bold">Exito!</h2>
+              <p class="text-2xl">
+                Ahora empieza el El Desafio Final
               </p>
             </main>
           </section>
-        </section> -->
+          <section class="space-y-3 leading-tight pb-4">
+            <main class="w-8/12 mx-auto space-y-3">
+              <img
+                class="rounded w-1/3 mt-6 max-w-lg mx-auto"
+                src="https://media.giphy.com/media/Ie2Hs3A0uJRtK/giphy.gif"
+                alt=""
+              />
+              <img
+                class="rounded w-1/3 mt-6 max-w-lg mx-auto"
+                src="https://media.giphy.com/media/IT1JGSJPJH66s/giphy.gif"
+                alt=""
+              />
+              <section>
+                <a class="p-2 rounded transform transition duration-300 ease-out hover:shadow hover:scale-125 flex justify-center" href="/desafio-js/">
+                  <img class="mr-3 h-6 w-6" src="../favicon.svg" alt="">
+                  <span>
+                    Empezar Desafio
+                  </span>
+                </a>  
+              </section>
+            </main>
+          </section>
+        </section>
 <!-- 
         <section class="relative">
           <img

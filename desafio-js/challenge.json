@@ -1,0 +1,63 @@
+{
+    "productoria": {
+        "title": "Productoria",
+        "text": "Necesitamos una función productoria que reciba un array de números y devuelva su productoria: el resultado de multiplicar todos sus elementos entre ellos.<br> Por ejemplo, productoria([1,4,7]) debe devolver 28, que es 1 * 4 * 7.<br>Escribí la función productoria",
+        "tests": [
+            "productoria([1, 2, 7]) es 14",
+            "productoria([10, 10]) es 100",
+            "productoria([10]) es 10",
+            "productoria([]) es 1",
+            "productoria([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]) es 3628800"
+        ]
+    },
+    "escalera": {
+        "title": "Escalera",
+        "text": "Queremos representar una escalera de altura variable, utilizando un array de strings.<br>Por ejemplo, a una escalera de altura 3, la representamos con el siguiente array:<br>var escalera3 = [<br>'  #',<br>' ##',<br>'###'<br>]<br>Y a una escalera de altura 5, de la siguiente forma:<br>var escalera5 = [<br>'    #',<br>'   ##',<br>'  ###',<br>' ####',<br>'#####'<br>]<br>Escribí una función escalera que tome una altura (un número) y devuelva un array que represente a la escalera correspondiente.",
+        "tests": [
+            "escalera(3)",
+            "escalera(4)",
+            "escalera(5)",
+            "escalera(100).length es 100",
+            "escalera(50).length es 50",
+            "escalera(60)"
+        ]
+    },
+    "profesora_furiosa": {
+        "title": "Profesora furiosa",
+        "text": "Una profesora de programación, cansada de que los estudiantes lleguen tarde, decidió que va a cancelar la clase si hay pocos presentes.<br>Ella representa a los ingresos de los estudiantes como un array de tiempos de llegada tarde, en minutos. Por ejemplo, si un estudiante llegó 10 minutos tarde, otro 5 minutos antes de hora, otro 3 minutos tarde, y otro puntual, lo representa así:<br>var ingresosDelLunes = [ 10, -5, 3, 0 ];<br>Con esta información y la cantidad de estudiantes mínimos para abrir el curso, la profesora quiere saber si la clase se abre. Por ejemplo, suponiendo que la cantidad minima de estudiantes para que la clase se de es 2, el curso del lunes se abre, porque hubo un estudiante que llegó puntual y un estudiante que llegó temprano.<br> seAbre(ingresosDelLunes, 2)true<br>Pero si la cantidad mínima fuera 3, la clase no se abriria:<br> seAbre(ingresosDelLunes,3)false<br>Escribi las siguientes funciones:<br>seAbre, que dice si se hace una clase dado el array de ingresosaperturas, que toma un array con los arrays de ingresos de varios días, y la cantidad mínima de estudiante, y diga que dias se abrió y que días no. Por ejemplo:<br>aperturas([ingresosDelLunes, ingresosDelMartes, ingresosDelMiercoles ], 2)[ true, false, false ]<br>",
+        "tests": [
+            "seAbre([10, -5, 3, 0], 4) es false",
+            "seAbre([10, -5, 3, 0], 3) es false",
+            "seAbre([10, -5, 3, 0], 2) es true",
+            "seAbre([10, -5, 3, 0], 1) es true",
+            "seAbre([0, 0, 3, 0], 3) es true",
+            "aperturas([[0, 0, 3, 0], [1, 2, 4, 5], [0, 0, -1]], 3) es [true, false, true]",
+            "aperturas([[0, 0, -3, 0], [1, 2, 4, 5], [0, 0, -1]], 4) es [true, false, false]"
+        ]
+    },
+    "arbol_utopico": {
+        "title": "Árbol utópico",
+        "text": "Los árboles utópicos  crecen de una forma particular, en dos ciclos:<br>cada primavera duplican su tamaño<br>cada verano crecen un metro<br>Si Laura planta un árbol utípico de un metro, al fin del otoño, ¿cuanto medirá de alto despuésde N ciclos?<br>Algunos ejemplos:<br>si N = 0, su altura será 1 metro (no creció nada)<br>si N = 1, su altura será de 2 metros (duplicó su altura en primavera)<br>si N = 2, su altura será de 3 metros (creció un metro más en verano)<br>si N = 3, su altura será de 6 metros (duplicó su altura en la siguiente primavera)<br>y así ...<br>Escribí la función alturaArbolUtopico, que tome una cantidad de ciclos de crecimiento, y devuelva la altura resultante del arbol de Laura.",
+        "tests": [
+            "alturaArbolUtopico(0) es 1",
+            "alturaArbolUtopico(1) es 2",
+            "alturaArbolUtopico(2) es 3",
+            "alturaArbolUtopico(3) es 6",
+            "alturaArbolUtopico(4) es 7",
+            "alturaArbolUtopico(5) es 14",
+            "alturaArbolUtopico(6) es 116"
+        ]
+    },
+    "factorial": {
+        "title": "Factorial",
+        "text": "Escribí una función factorial, que calcule el factorial de un numero. <br /> <span class='text-sm italic'> factorial(n) se define en principio como el producto de todos los números enteros positivos desde 1 hasta n. </span>",
+        "tests": [
+            "factorial(1) es 1",
+            "factorial(2) es 2",
+            "factorial(3) es 6",
+            "factorial(5) es 120",
+            "factorial(7) es 5040",
+            "factorial(10) es 3628800"
+        ]
+    }
+}
